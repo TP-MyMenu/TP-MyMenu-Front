@@ -1,0 +1,51 @@
+.filtersDisplay {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    min-width: 64rem;
+    height: 3.125rem;
+    background: #f0ecec;
+    color: #fff;
+    z-index: 1;
+}
+
+.box {
+  // position: fixed;
+  display: flex;
+  justify-content: flex-start;
+  align-items: space-between;
+  background: #f0ecec;
+  width: 30rem;
+  padding-top: 1rem;
+}
+
+.title {
+    margin: 1rem;
+}
+
+.filters {
+  border: 2px solid white;
+  background: white;
+  border-radius: 5rem;
+  display: inline;
+  color: #7c7878;
+  margin: 0.1rem;
+  padding: .1rem;
+}
+
+.filters:hover {
+  border: solid 2px lightskyblue;
+  background-color: lightskyblue;
+  color: white;
+  cursor: pointer;
+}
+
+.filtersSelected {
+  border: solid 2px rgb(44, 111, 153);
+  background-color: rgb(44, 111, 153);
+  border-radius: 5rem;
+  color: white;
+  margin: 0.1rem;
+  padding: .1rem;
+  cursor: pointer;
+}

@@ -8,8 +8,6 @@ const PaymentContainer = () => {
     'http://0.0.0.0:8000/api/payment_method/'
   )
 
-  console.log(data);
-
   if (loading) return <p>Loading...</p>
   if (error) return <p>Error!</p>
  

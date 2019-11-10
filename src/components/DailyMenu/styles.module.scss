@@ -1,0 +1,96 @@
+.boxBig {
+  background: white;
+  width: 30rem;
+  margin: 1rem auto;
+  border-radius: .5rem;
+  padding-top: 1rem;
+}
+
+.box {
+  background: white;
+  width: 30rem;
+  margin: 1rem auto;
+  border-radius: .5rem;
+  padding-top: 1rem;
+}
+
+.title {
+  text-align: left;
+  margin: 2rem;
+  padding-top: 1rem;
+  color: black;
+  font-weight: 2px;
+  display: inline;
+  padding-right: 8rem;
+}
+
+.descriptionTitle {
+  text-align: left;
+  margin-left: 2rem;
+  padding-bottom: 1rem;
+  margin-bottom: .5rem;
+  color: black;
+  font-weight: 2px;
+}
+
+.category {
+  text-align: left;
+  margin-left: 2rem;
+  color: black;
+  font-weight: 2px;
+}
+
+.ruler {
+  height: 1px;
+  border: 0;
+  color: rgb(85, 84, 84);
+  background-color: rgb(85, 84, 84);
+  width: 90%;
+}
+
+.description {
+  text-align: left;
+  margin: .5rem 2rem;
+  color: rgb(61, 60, 60);
+  font-weight: 1px;
+}
+
+.dailyMenu {
+  border: 2px solid red;
+  background: red;
+  border-radius: .5rem;
+  display: inline;
+  color: white;
+}
+
+.logosBlock {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.logos {
+  margin: 1rem;
+  width: 3rem;
+  height: 3rem;
+}
+
+.imagesContainer {
+  margin: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.5rem;
+  justify-content: space-around;
+}
+
+.imgMain {
+  margin: 0.5rem;
+  width: 100%;
+}
+
+.imgDrink {
+  width: 45%;
+}
+
+.imgDessert {
+  width: 45%;
+}

@@ -4,6 +4,7 @@ import { Link, BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Meals from '../Meals';
 import DailyMenu from '../DailyMenu';
 import Beverages from '../Beverages';
+import Suggestions from '../Suggestions';
 
 import styles from './styles.module.scss';
 
@@ -27,6 +28,11 @@ const Menu = () => (
                 <h4>Bebidas</h4>
               </Link>
             </li>
+            <li className={styles.menuOption}>
+              <Link to="/suggestions" className={styles.link}>
+                <h4>Sugerencias</h4>
+              </Link>
+            </li>
           </ul>
         </div>
     </div>
@@ -34,6 +40,7 @@ const Menu = () => (
       <Route exact path="/meals" component={Meals} />
       <Route exact path="/daily-menu" component={DailyMenu} />
       <Route exact path="/beverages" component={Beverages} />
+      <Route exact path="/suggestions" component={Suggestions} />
     </Switch>
   </Router>
 );

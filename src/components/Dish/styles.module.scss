@@ -1,7 +1,6 @@
 .boxBig {
     background: white;
     width: 30rem;
-    height: 46rem;
     margin: 1rem auto;
     border-radius: .5rem;
     padding-top: 1rem;
@@ -10,7 +9,6 @@
 .box {
     background: white;
     width: 30rem;
-    height: 40rem;
     margin: 1rem auto;
     border-radius: .5rem;
     padding-top: 1rem;
@@ -34,6 +32,14 @@
 }
 
 .descriptionTitle {
+    text-align: left;
+    margin-left: 2rem;
+    padding-bottom: 1rem;
+    color: black;
+    font-weight: 2px;
+}
+
+.category {
     text-align: left;
     margin-left: 2rem;
     color: black;

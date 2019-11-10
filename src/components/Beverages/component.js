@@ -10,7 +10,7 @@ const defaultProps = {
 const Beverages= ({ beverage }) => (
   <div>
     {beverage && beverage.map((beverage) => {
-      console.log('mostrando bebida');
+
       return(
         <Beverage 
           key={beverage.id}

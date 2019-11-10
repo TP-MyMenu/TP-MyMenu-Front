@@ -15,7 +15,8 @@ const Dish = ({
   dailyMenu,
   suitable_for_celiacs,
   suitable_for_vegetarians,
-  logos
+  logos,
+  category,
 }) => (
   <div className={classNames({ [styles.boxBig]: logos }, { [styles.box]: !logos  })}>
       <h2 className={styles.title}>{title}</h2>
@@ -24,6 +25,7 @@ const Dish = ({
       <h3 className={styles.descriptionTitle}>{DESCRIPTION}</h3>
       <hr className={styles.ruler} />
       <p className={styles.description}>{description}</p>
+      <h4 className={styles.category}>{category}</h4>
       <hr className={styles.ruler} />
       <h3 className={styles.descriptionTitle}>{`Precio: ${price}$`}</h3>
       {logos && 

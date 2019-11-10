@@ -1,11 +1,11 @@
 import React from 'react';
 import useAxios from 'axios-hooks';
 
-import Meals from './component';
+import DailyMenu from './component';
 
-const MealsContainer = () => {
+const DailyMenuContainer = () => {
   const [{ data, loading, error }] = useAxios(
-    'http://0.0.0.0:8000/api/dishes/'
+    'http://0.0.0.0:8000/api/day_dish/'
   )
 
   console.log({ data });
@@ -14,8 +14,8 @@ const MealsContainer = () => {
   if (error) return <p>Error!</p>
  
   return (
-      <Meals dishes={data} />
+      <DailyMenu menu={data} />
   );
 };
 
-export default MealsContainer;
+export default DailyMenuContainer;

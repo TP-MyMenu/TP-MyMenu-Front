@@ -8,8 +8,6 @@ const BeveragesContainer = () => {
     'http://0.0.0.0:8000/api/drinks/'
   )
 
-  console.log({ data });
-
   if (loading) return <p>Loading...</p>
   if (error) return <p>Error!</p>
  

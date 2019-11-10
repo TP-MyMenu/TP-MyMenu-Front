@@ -8,8 +8,6 @@ const MealsContainer = () => {
     'http://0.0.0.0:8000/api/dishes/'
   )
 
-  console.log({ data });
-
   if (loading) return <p>Loading...</p>
   if (error) return <p>Error!</p>
  

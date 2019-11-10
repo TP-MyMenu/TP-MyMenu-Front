@@ -3,8 +3,6 @@ import React from 'react';
 import styles from './styles.module.scss';
 
 const DESCRIPTION = 'Descripción del menu';
-// const VEGETARIANA = 'images/vegetariana.png';
-// const CELIACOS = 'images/celiacos.png';
 
 const DailyMenu = ({menu}) => (
   <div>
@@ -15,7 +13,7 @@ const DailyMenu = ({menu}) => (
       dessert,
       price
     }) => (
-      <div className={styles.box}>
+      <div className={styles.box} key={`${main_dish.id}-${drink.id}-${dessert.id}`}>
         <h2 className={styles.title}>Menu del dia</h2>
         <div className={styles.imagesContainer}>
           <img className={styles.imgMain} src={main_dish.image} alt="dish_display" />
@@ -32,15 +30,6 @@ const DailyMenu = ({menu}) => (
         <p className={styles.description}>{dessert.description}</p>
         <hr className={styles.ruler} />
         <h3 className={styles.descriptionTitle}>{`Precio: ${price}$`}</h3>
-        {/* {logos && 
-          <div>
-            <hr className={styles.ruler} />
-            <div className={styles.logosBlock}>
-              {suitable_for_celiacs && <img className={styles.logos} src={CELIACOS} alt="celiacos" />}
-              {suitable_for_vegetarians && <img className={styles.logos} src={VEGETARIANA} alt="vegetariana" />}
-            </div>
-          </div>
-        } */}
       </div>
       )
     )}

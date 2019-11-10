@@ -6,8 +6,6 @@ import Dish from '../Dish';
 import styles from './styles.module.scss';
 
 const Meals = ({ dishes }) => {
-
-  console.log({ dishes });
   return (
     <div className={styles.display}>
       {dishes && dishes.map((dish) => {

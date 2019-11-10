@@ -5,6 +5,7 @@ import Meals from '../Meals';
 import DailyMenu from '../DailyMenu';
 import Beverages from '../Beverages';
 import Suggestions from '../Suggestions';
+import Payment from '../Payment';
 
 import styles from './styles.module.scss';
 
@@ -33,6 +34,11 @@ const Menu = () => (
                 <h4>Sugerencias</h4>
               </Link>
             </li>
+            <li className={styles.menuOption}>
+              <Link to="/payment" className={styles.link}>
+                <h4>Métodos de pago</h4>
+              </Link>
+            </li>
           </ul>
         </div>
     </div>
@@ -41,6 +47,7 @@ const Menu = () => (
       <Route exact path="/daily-menu" component={DailyMenu} />
       <Route exact path="/beverages" component={Beverages} />
       <Route exact path="/suggestions" component={Suggestions} />
+      <Route exact path="/payment" component={Payment} />
     </Switch>
   </Router>
 );

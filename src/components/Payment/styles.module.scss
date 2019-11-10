@@ -1,0 +1,42 @@
+.box {
+  background: white;
+  width: 30rem;
+  margin: 1rem auto;
+  border-radius: .5rem;
+  padding-top: 1rem;
+}
+
+.title {
+  text-align: left;
+  margin: 2rem;
+  padding-top: 1rem;
+  color: black;
+  font-weight: 2px;
+  display: inline;
+  padding-right: 8rem;
+}
+
+.descriptionTitle {
+  text-align: left;
+  margin-left: 2rem;
+  padding-bottom: 1rem;
+  margin-bottom: .5rem;
+  color: black;
+  font-weight: 2px;
+}
+
+.description {
+  text-align: left;
+  margin: 1rem 2rem;
+  color: rgb(61, 60, 60);
+  font-weight: 1px;
+  padding-bottom: 1rem;
+}
+
+.ruler {
+  height: 1px;
+  border: 0;
+  color: rgb(85, 84, 84);
+  background-color: rgb(85, 84, 84);
+  width: 90%;
+}
